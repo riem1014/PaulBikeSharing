@@ -1,0 +1,82 @@
+html, body {margin: 0; height: 100%; text-align: center;}
+section {min-height: 100%; width: 100% }
+a {text-decoration: none;}
+li {list-style-type: none;}
+
+h1, h2, h3, a {font-family: 'Roboto', sans-serif; color: #494949; text-transform: uppercase;}
+p {font-family: 'Roboto', sans-serif; color: #494949;}
+h1 {font-size: 60px;}
+h2 {font-size: 20px;}
+h3 {font-size: 40px;}
+p {font-size: 20px;}
+
+hr{width: 30px; height: 3px;background: #494949; border: 0px; border-radius: 5px; margin: 0 auto 0 auto;}
+#test hr {margin-bottom: 65px; width: 100%; height: 0;}
+
+li, #Logo, .howItWorks img, .button, #kontakt img {transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms;}
+
+
+/* Header *************************************************/
+header {width: 100%; height: 65px; position: fixed; top: 0; left: 0; background: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); z-index: 1;}
+#Logo {float: left; margin: 5px 0 5px 10px;}
+#Logo:hover {opacity: 50%;}
+#Logo img {
+    height: 55px;
+    width: 55px;
+    margin-top: 0;
+    border-radius: 27.5px;
+    object-fit: cover;
+  }
+header nav {float: right; margin: 10px 50px 0 0;}
+header nav ul li {float: left; margin-right: 16px;}
+header nav ul li:hover {padding-top: 5px;}
+
+/* Home *************************************************/
+#home {background: url(img01.jpg); background-position: center center; background-size: cover;}
+#home h2 {padding-top: 33%; color: azure;}
+#home h1 {color: azure;}
+#home img {width: 32px; opacity: 0.7;}
+#home img:hover {opacity: 1;}
+
+/* How it works *************************************************/
+#howItWorks .row {
+    display: flex; /* Verwende Flexbox, um die Bilder nebeneinander anzuordnen */
+    justify-content: space-between; /* Platzieren Sie die Bilder gleichmäßig im Container */
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+  }
+  
+#howItWorks .third {
+    flex-basis: calc(20%); /* Setze die Breite jedes Bildes auf ein Drittel des verfügbaren Platzes */
+}
+  
+#howItWorks img {
+    max-width: 100%; /* Stelle sicher, dass die Bilder innerhalb ihrer Container bleiben */
+    height: auto; /* Behalte das Seitenverhältnis der Bilder bei */
+}
+  
+/* Locations *************************************************/
+#LOCATIONS .row {
+    display: flex; 
+    justify-content: space-between; /* Platzieren Sie die Bilder gleichmäßig im Container */
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#LOCATIONS .third {
+    flex-basis: calc(30%);
+    position: relative;
+}
+  
+#LOCATIONS img {
+    max-width: 100%; /* Stelle sicher, dass die Bilder innerhalb ihrer Container bleiben */
+    height: 100%; /* Behalte das Seitenverhältnis der Bilder bei */
+    object-fit: cover;
+}
+
+
+
+/* Footer *************************************************/
+footer {width: 100%; height: 65px; background-color: #3f3f3f;}
+footer p {font-size: 12px; color: #f0f0f0; padding-top: 30px;}
