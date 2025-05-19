@@ -1,3 +1,5 @@
-print("mi Amore")
-print("Espresso Macchiato")
-print("Macchiato profavore")
+a = 15
+b = 10
+print(a)
+print(b)
+
